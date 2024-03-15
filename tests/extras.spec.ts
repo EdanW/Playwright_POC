@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-// This test checks whether the QA automation is still open
+// This test checks whether the QA automation position is still open
 // It was done using the Playwright codegen feature
 test('is the position still open', async ({ page }) => {
     await page.goto('https://www.docontrol.io/');
