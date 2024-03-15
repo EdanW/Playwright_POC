@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
 
+// This test checks whether the QA automation is still open
+// It was done using the Playwright codegen feature
 test('is the position still open', async ({ page }) => {
     await page.goto('https://www.docontrol.io/');
     await page.getByRole('navigation').getByRole('link').nth(2).click();
@@ -11,6 +13,8 @@ test('is the position still open', async ({ page }) => {
     await page.close();
 });
 
+// This test checks whether the world population number makes sense
+// It uses locators API and JS logic
 test('is the world population normal (using JS)', async ({ page }) => {
     await page.goto('https://www.worldometers.info/world-population/');
 
