@@ -15,7 +15,6 @@ test('it is 18 degrees somewhere by ElementHandle', async ({ page }) => {
     }
   }
 
-  isEighteenSomewhere = true;
   expect(isEighteenSomewhere).toBeTruthy();
   await page.close();
 });
