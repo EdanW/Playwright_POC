@@ -8,7 +8,9 @@ test('it is 18 degrees somewhere by ElementHandle', async ({ page }) => {
   const cities = await page.$$('[class="text temp"]');
   var isEighteenSomewhere = false;
   for (const city of cities) {
+    console.log (city);
     const currTemp = await city.innerText();
+    console.log (currTemp);
     if (currTemp == "18°"){
       isEighteenSomewhere = true;
       break;
